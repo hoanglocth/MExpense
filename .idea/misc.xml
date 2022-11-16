@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/FGW/Mobile/MExpense/app/src/main/res/drawable-anydpi/action_floating_button.xml" value="0.1" />
+        <entry key="..\:/FGW/Mobile/MExpense/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.136" />
+        <entry key="..\:/FGW/Mobile/MExpense/app/src/main/res/drawable/action_floating_button.xml" value="0.1" />
+        <entry key="..\:/FGW/Mobile/MExpense/app/src/main/res/drawable/background_expense_item.xml" value="0.167" />
+        <entry key="..\:/FGW/Mobile/MExpense/app/src/main/res/drawable/background_input_field.xml" value="0.1225" />
+        <entry key="..\:/FGW/Mobile/MExpense/app/src/main/res/drawable/background_search_view.xml" value="0.1705" />
+        <entry key="..\:/FGW/Mobile/MExpense/app/src/main/res/drawable/background_trip_item.xml" value="0.1705" />
+        <entry key="..\:/FGW/Mobile/MExpense/app/src/main/res/drawable/delete_all_icon.xml" value="0.1" />
+        <entry key="..\:/FGW/Mobile/MExpense/app/src/main/res/drawable/edit_trip_icon.xml" value="0.168" />
+        <entry key="..\:/FGW/Mobile/MExpense/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.1" />
+        <entry key="..\:/FGW/Mobile/MExpense/app/src/main/res/drawable/ic_baseline_check_24.xml" value="0.168" />
+        <entry key="..\:/FGW/Mobile/MExpense/app/src/main/res/drawable/ic_baseline_expense_icon_24.xml" value="0.1495" />
+        <entry key="..\:/FGW/Mobile/MExpense/app/src/main/res/drawable/ic_baseline_sync_24.xml" value="0.1495" />
+        <entry key="..\:/FGW/Mobile/MExpense/app/src/main/res/drawable/ic_baseline_trip_icon_24.xml" value="0.1495" />
+        <entry key="..\:/FGW/Mobile/MExpense/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1225" />
+        <entry key="..\:/FGW/Mobile/MExpense/app/src/main/res/drawable/name_trip_icon.xml" value="0.1705" />
+        <entry key="..\:/FGW/Mobile/MExpense/app/src/main/res/layout-land/row_trip_item.xml" value="0.2833333333333333" />
+        <entry key="..\:/FGW/Mobile/MExpense/app/src/main/res/layout/activity_add_expense.xml" value="0.27395833333333336" />
+        <entry key="..\:/FGW/Mobile/MExpense/app/src/main/res/layout/activity_add_trip.xml" value="0.4109375" />
+        <entry key="..\:/FGW/Mobile/MExpense/app/src/main/res/layout/activity_detail.xml" value="0.20652173913043478" />
+        <entry key="..\:/FGW/Mobile/MExpense/app/src/main/res/layout/activity_detail_trip.xml" value="0.27395833333333336" />
+        <entry key="..\:/FGW/Mobile/MExpense/app/src/main/res/layout/activity_edit_trip.xml" value="0.2129115006412997" />
+        <entry key="..\:/FGW/Mobile/MExpense/app/src/main/res/layout/activity_main.xml" value="0.27395833333333336" />
+        <entry key="..\:/FGW/Mobile/MExpense/app/src/main/res/layout/dialog_confirm.xml" value="0.27395833333333336" />
+        <entry key="..\:/FGW/Mobile/MExpense/app/src/main/res/layout/fragment_dialog_cofirm.xml" value="0.1" />
+        <entry key="..\:/FGW/Mobile/MExpense/app/src/main/res/layout/fragment_dialog_confirm.xml" value="0.26974358974358975" />
+        <entry key="..\:/FGW/Mobile/MExpense/app/src/main/res/layout/row_constants_trip.xml" value="0.20652173913043478" />
+        <entry key="..\:/FGW/Mobile/MExpense/app/src/main/res/layout/row_expense_item.xml" value="0.2324074074074074" />
+        <entry key="..\:/FGW/Mobile/MExpense/app/src/main/res/layout/row_trip_iem.xml" value="0.27395833333333336" />
+        <entry key="..\:/FGW/Mobile/MExpense/app/src/main/res/layout/row_trip_item.xml" value="0.27395833333333336" />
+        <entry key="..\:/FGW/Mobile/MExpense/app/src/main/res/menu/main_top_menu.xml" value="0.22488242838820008" />
+        <entry key="..\:/FGW/Mobile/MExpense/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1225" />
+        <entry key="..\:/FGW/Mobile/MExpense/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1225" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

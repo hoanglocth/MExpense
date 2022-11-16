@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutTripItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10sp"
+    android:layout_marginLeft="10sp"
+    android:layout_marginRight="10sp"
+    android:background="@drawable/background_trip_item"
+    android:gravity="center_vertical"
+    android:padding="10sp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/linearTrip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/nameTripRV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trip"
+            android:textColor="@color/colorTextSecondary"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/destinationTripRV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextSecondary"
+            android:text="Destination" />
+
+        <TextView
+            android:id="@+id/dateTripRV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:textColor="@color/colorTextSecondary"
+            android:text="mm/dd/yy"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

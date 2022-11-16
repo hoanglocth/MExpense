@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSecondary"
+    android:isScrollContainer="true"
+    tools:context=".AddEditTripActivity">
+
+    <Button
+        android:id="@+id/saveTripButton"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_alignParentEnd="true"
+        android:background="?android:selectableItemBackground"
+        app:icon="@drawable/ic_baseline_check_24"
+        app:iconGravity="textStart"
+        app:iconPadding="-5sp"
+        app:iconTint="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/saveTripButton"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+        <!--Input name of trip-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name of Trip ..."
+            android:paddingHorizontal="10sp"
+            app:boxBackgroundColor="#00FFFFFF"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/colorTextPrimary"
+            app:helperText="Require*"
+            app:helperTextTextColor="@color/red"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/colorTextPrimary"
+            app:hintTextColor="@color/colorTextPrimary">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nameTrip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textShortMessage"
+                android:textColor="@color/colorPrimary" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Input destination of trip-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/destinationLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Destination of Trip ..."
+            android:paddingHorizontal="10sp"
+            app:boxBackgroundColor="#00FFFFFF"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/colorTextPrimary"
+            app:helperText="Require*"
+            app:endIconMode="clear_text"
+            app:helperTextTextColor="@color/red"
+            app:endIconTint="@color/colorTextPrimary"
+            app:hintTextColor="@color/colorTextPrimary">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/destinationTrip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textShortMessage"
+                android:textColor="@color/colorPrimary" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Button edit date-->
+        <Button
+            android:id="@+id/dateTrip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:backgroundTint="@android:color/transparent"
+            android:onClick="openDatePicker"
+            android:paddingVertical="20sp"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorPrimary"/>
+
+        <!--Check view Requires Risk Assessment-->
+        <CheckedTextView
+            android:id="@+id/riskTripCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10sp"
+            android:layout_marginTop="10sp"
+            android:background="@drawable/background_input_field"
+            android:checkMark="?android:listChoiceIndicatorMultiple"
+            android:checked="false"
+            android:gravity="center"
+            android:paddingStart="10sp"
+            android:paddingEnd="10sp"
+            android:text="Requires Risk Assessment " />
+
+        <!--Input description of trip-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/descriptionLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description ..."
+            android:padding="10sp"
+            app:boxBackgroundColor="#00FFFFFF"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/colorTextPrimary"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/colorTextPrimary"
+            app:hintTextColor="@color/colorTextPrimary">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/descriptionTrip"
+                android:layout_width="match_parent"
+                android:layout_height="150sp"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:textColor="@color/colorPrimary" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+</RelativeLayout>

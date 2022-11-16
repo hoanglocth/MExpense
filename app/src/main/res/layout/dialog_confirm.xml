@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DialogConfirmFragment">
+
+
+    <!--    Allow scroll if too many lines of text-->
+    <ScrollView
+        android:id="@+id/scrollDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10sp">
+            <!--                Row name detail-->
+            <TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Name"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/nameTripDialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <!--                Row destination detail-->
+            <TableRow android:layout_marginTop="10sp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Destination"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/destinationTripDialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <!--            Row date detail-->
+            <TableRow android:layout_marginTop="10sp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/dateTripDialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp" />
+            </TableRow>
+
+            <!--            Row risk assessment detail-->
+            <TableRow android:layout_marginTop="10sp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Risk Assessment"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/riskTripDialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10sp" />
+            </TableRow>
+
+            <!--        Description detail-->
+            <TableRow android:layout_marginTop="10sp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/descriptionTripDialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:layout_weight="1" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+</RelativeLayout>

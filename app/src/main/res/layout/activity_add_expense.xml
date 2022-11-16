@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddExpenseActivity">
+
+    <Button
+        android:id="@+id/saveExpenseButton"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_alignParentEnd="true"
+        android:background="?android:selectableItemBackground"
+        app:icon="@drawable/ic_baseline_check_24"
+        app:iconGravity="textStart"
+        app:iconPadding="-5sp"
+        app:iconTint="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/saveExpenseButton"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+        <!--Input name of trip-->
+        <Spinner
+            android:id="@+id/tripSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:background="@drawable/background_input_field"
+            android:dropDownWidth="wrap_content" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/typeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type of expense ..."
+            android:paddingHorizontal="10sp"
+            app:boxBackgroundColor="#00FFFFFF"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/colorTextPrimary"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/colorTextPrimary"
+            app:helperText="Require*"
+            app:helperTextTextColor="@color/red"
+            app:hintTextColor="@color/colorTextPrimary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/typeExpense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textShortMessage"
+                android:textColor="@color/colorPrimary" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Input destination of trip-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/amountLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Amount of the Expense  ..."
+            android:paddingHorizontal="10sp"
+            app:boxBackgroundColor="#00FFFFFF"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/colorTextPrimary"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/colorTextPrimary"
+            app:helperText="Require*"
+            app:helperTextTextColor="@color/red"
+            app:hintTextColor="@color/colorTextPrimary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/amountExpense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textColor="@color/colorPrimary" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Button edit date-->
+        <Button
+            android:id="@+id/timeExpense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:backgroundTint="@android:color/transparent"
+            android:onClick="openDatePicker"
+            android:paddingVertical="20sp"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorPrimary" />
+
+        <!--Input description of trip-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/commentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Additional comment ..."
+            android:padding="10sp"
+            app:boxBackgroundColor="#00FFFFFF"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/colorTextPrimary"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/colorTextPrimary"
+            app:hintTextColor="@color/colorTextPrimary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/commentExpense"
+                android:layout_width="match_parent"
+                android:layout_height="150sp"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:textColor="@color/colorPrimary" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+</RelativeLayout>
